@@ -1,0 +1,28 @@
+{
+    "include": ["stories/**/*"],
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "allowUnreachableCode": false,
+      "allowUnusedLabels": false,
+      "jsx": "react-jsx",
+      "jsxImportSource": "preact",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "noImplicitReturns": false,
+      "paths": {
+        "@ucp/*": ["./packages/*"]
+      },
+      "plugins": [
+        {
+          "name": "typescript-plugin-css-modules",
+          "options": {
+            "namedExports": false,
+            "classnameTransform": "camelCaseOnly"
+          }
+        }
+      ],
+      "resolveJsonModule": true,
+      "target": "esnext"
+    }
+  }
+  
