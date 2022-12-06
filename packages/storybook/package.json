@@ -1,0 +1,16 @@
+{
+  "name": "storybook",
+  "version": "0.0.0",
+  "type": "module",
+  "devDependencies": {
+    "@preact/preset-vite": "2.4.0",
+    "@storybook/addon-essentials": "6.5.14",
+    "@storybook/builder-vite": "0.2.5",
+    "@storybook/preact": "6.5.14",
+    "preact": "10.5.15",
+    "vite": "3.2.5"
+  },
+  "scripts": {
+    "start": "NODE_PATH=../../node_modules NODE_OPTIONS=--openssl-legacy-provider start-storybook --port 6004 -c ./"
+  }
+}

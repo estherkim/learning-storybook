@@ -1,5 +1,5 @@
 {
-    "include": ["stories/**/*"],
+    "include": ["packages/storybook/**/*"],
     "compilerOptions": {
       "esModuleInterop": true,
       "allowUnreachableCode": false,
@@ -9,9 +9,6 @@
       "module": "esnext",
       "moduleResolution": "node",
       "noImplicitReturns": false,
-      "paths": {
-        "@ucp/*": ["./packages/*"]
-      },
       "plugins": [
         {
           "name": "typescript-plugin-css-modules",
