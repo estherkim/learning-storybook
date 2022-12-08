@@ -1,8 +1,7 @@
+const { mergeConfig } = require('vite');
+
 module.exports = {
-  "stories": [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
+  "stories": ['stories/**/*.stories.mdx', 'stories/**/*.stories.@(js|jsx|ts|tsx)'],
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -15,5 +14,10 @@ module.exports = {
   },
   "features": {
     "storyStoreV7": true
-  }
+  },
+  async viteFinal (config) {
+    return mergeConfig(config, {
+      root: '../../' // to place builder-vite's .vite-storybook/ in root node_modules
+    }) 
+  }  
 }

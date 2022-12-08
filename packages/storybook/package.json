@@ -1,0 +1,19 @@
+{
+  "name": "storybook",
+  "version": "0.0.0",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-essentials": "^6.5.14",
+    "@storybook/addon-interactions": "^6.5.14",
+    "@storybook/addon-links": "^6.5.14",
+    "@storybook/builder-vite": "^0.2.5",
+    "@storybook/html": "^6.5.14",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.3.0"
+  },
+  "scripts": {
+    "start": "NODE_PATH=../../node_modules NODE_OPTIONS=--openssl-legacy-provider start-storybook --port 6004 -c ./"
+  }
+}
